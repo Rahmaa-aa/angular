@@ -1,0 +1,88 @@
+/* Pastel theme colors */
+:root {
+  --pastel-pink: #ffd1dc;
+  --pastel-purple: #e0bbff;
+  --pastel-yellow: #fff5ba;
+  --pastel-blue: #b5ead7;
+  --pastel-bg: #fffafd;
+  --pastel-accent: #ffb7ce;
+}
+
+/* Navbar */
+.pastel-navbar {
+  background: linear-gradient(90deg, var(--pastel-pink) 0%, var(--pastel-purple) 100%);
+  box-shadow: 0 2px 12px 0 rgba(255,183,206,0.08);
+}
+
+.pastel-navbar .navbar-brand {
+  color: var(--pastel-accent) !important;
+  letter-spacing: 1px;
+  font-family: 'Poppins', cursive, sans-serif;
+}
+
+.pastel-navbar .navbar-nav .nav-link {
+  color: #a96da3 !important;
+  font-weight: 500;
+  border-radius: 20px;
+  margin: 0 5px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.pastel-navbar .navbar-nav .nav-link.active,
+.pastel-navbar .navbar-nav .nav-link:hover {
+  background: var(--pastel-bg);
+  color: #ff8da1 !important;
+}
+
+/* Pastel search and button */
+.pastel-search {
+  border-radius: 20px;
+  border: 1.5px solid var(--pastel-accent);
+  background: var(--pastel-bg);
+}
+
+.pastel-btn {
+  background: var(--pastel-accent);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  transition: background 0.2s;
+}
+
+.pastel-btn:hover {
+  background: #ff8da1;
+}
+
+/* Footer */
+.pastel-footer {
+  background: linear-gradient(90deg, var(--pastel-yellow) 0%, var(--pastel-blue) 100%);
+  color: #a96da3;
+  border-top: 2px solid var(--pastel-pink);
+  font-family: 'Poppins', cursive, sans-serif;
+}
+
+.pastel-footer .footer-link {
+  color: #a96da3;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.pastel-footer .footer-link:hover {
+  color: #ff8da1;
+  text-decoration: underline;
+}
+
+.pastel-footer .footer-social {
+  color: #ff8da1;
+  font-size: 1.3rem;
+  transition: color 0.2s;
+}
+
+.pastel-footer .footer-social:hover {
+  color: #a96da3;
+}
+
+.pastel-footer .pastel-hr {
+  border-color: var(--pastel-pink);
+  opacity: 0.5;
+}
