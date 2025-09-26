@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class ListEventComponent {
 
-}
+  export class EventListComponent implements OnInit {
+  events: Event[] = [];
+
+  constructor(private eventService: EventService) { }
+
+  ngOnInit(): void {
+    this.events = this.eventService.getEvents();
+}}
