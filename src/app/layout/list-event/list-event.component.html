@@ -1,23 +1,32 @@
-<!--<div class="events-container">
-  <h2>Liste des Événements</h2>
-  
-  <div class="event-grid">
-    <div *ngFor="let event of events" class="event-card">
-      <img [src]="event.imageUrl" [alt]="event.titre" class="event-image">
-      
-      <div class="event-content">
-        <h3>{{ event.titre }}</h3>
-        <p class="description">{{ event.description }}</p>
-        
-        <div class="event-details">
-          <p><strong>Date:</strong> {{ event.date | date:'medium' }}</p>
-          <p><strong>Lieu:</strong> {{ event.lieu }}</p>
-          <p><strong>Prix:</strong> {{ event.prix === 0 ? 'Gratuit' : event.prix + ' TND' }}</p>
-          <p><strong>Places disponibles:</strong> {{ event.nbPlaces }}</p>
-          <p><strong>Likes:</strong> ❤️ {{ event.nbrLikes }}</p>
+<p>list-event works!</p>
+<div class="container py-4">
+    <h2 class="mb-3">Liste des événements</h2>
+
+    <!-- Recherche -->
+    <input type="text" class="form-control mb-4"
+           placeholder="Rechercher un événement">
+
+    <div class="row g-3">
+        <div class="col-md-4" >
+            <div class="card h-100 shadow-sm">
+                <img src="imageUrl"
+                     class="card-img-top img-fluid"
+                     style="height: 200px; object-fit: cover;">
+
+                <div class="card-body">
+                    <h5 class="card-title">put your data</h5>
+                    <p class="text-muted">put your data}</p>
+                    <p>put your data}}</p>
+                    <p class="fw-bold">put your data}</p>
+                    <p>put your data</p>
+
+                    <!-- Bouton Like -->
+                    <button class="btn btn-sm btn-primary" >
+                        👍 Like
+                    </button>
+                    <span class="ms-2">put your data</span>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
--->
