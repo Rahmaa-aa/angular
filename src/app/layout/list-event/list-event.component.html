@@ -1,8 +1,8 @@
-<div class="events-container">
+<!--<div class="events-container">
   <h2>Liste des Événements</h2>
   
   <div class="event-grid">
-    <div *ngFor="let event of event" class="event-card">
+    <div *ngFor="let event of events" class="event-card">
       <img [src]="event.imageUrl" [alt]="event.titre" class="event-image">
       
       <div class="event-content">
@@ -14,9 +14,10 @@
           <p><strong>Lieu:</strong> {{ event.lieu }}</p>
           <p><strong>Prix:</strong> {{ event.prix === 0 ? 'Gratuit' : event.prix + ' TND' }}</p>
           <p><strong>Places disponibles:</strong> {{ event.nbPlaces }}</p>
-          <p><strong>Likes:</strong> {{ event.nbrLikes }}</p>
+          <p><strong>Likes:</strong> ❤️ {{ event.nbrLikes }}</p>
         </div>
       </div>
     </div>
   </div>
 </div>
+-->

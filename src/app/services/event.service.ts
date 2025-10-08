@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Event } from '../models/event.model';
+import { Event } from '../models/event';
 
 @Injectable({
   providedIn: 'root'
@@ -24,7 +24,7 @@ export class EventService {
       description: "Discussion autour des dernières tendances en intelligence artificielle.",
       date: new Date("2025-11-02T09:00:00"),
       lieu: "Centre de Congrès",
-      prix: 0, // gratuit
+      prix: 0,
       organisateurId: 102,
       imageUrl: "assets/images/ai_conf.jpg",
       nbPlaces: 500,
@@ -56,33 +56,11 @@ export class EventService {
     }
   ];
 
-  constructor() { }
-
-  // Get all events
   getEvents(): Event[] {
     return this.EVENTS;
   }
 
-  // Get event by ID
   getEventById(id: number): Event | undefined {
     return this.EVENTS.find(event => event.id === id);
-  }
-
-  // Add new event
-  addEvent(event: Event): void {
-    this.EVENTS.push(event);
-  }
-
-  // Update event
-  updateEvent(updatedEvent: Event): void {
-    const index = this.EVENTS.findIndex(event => event.id === updatedEvent.id);
-    if (index !== -1) {
-      this.EVENTS[index] = updatedEvent;
-    }
-  }
-
-  // Delete event
-  deleteEvent(id: number): void {
-    this.EVENTS = this.EVENTS.filter(event => event.id !== id);
   }
 }
